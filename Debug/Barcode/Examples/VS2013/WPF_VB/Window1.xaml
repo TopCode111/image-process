@@ -1,0 +1,23 @@
+﻿<Window x:Class="Window1"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:Windows="clr-namespace:Limilabs.Windows;assembly=Barcode"
+    Title="Barcode in WPF" Height="300" Width="400">
+
+    <StackPanel>
+        <TextBlock>
+            Notice additional referenced assembly WindowsFormsIntegration            
+        </TextBlock>
+        <WindowsFormsHost Name="host">
+            <Windows:BarcodeControl 
+                x:Name="barcode" 
+                Height="200" 
+                Number="Barcode in WPF" 
+                Symbology="Code128"
+                />
+        </WindowsFormsHost>
+        <Button Click="Button_Click">Click Me</Button>
+        <Button Click="PrintButton_Click">Print Me</Button>        
+    </StackPanel>
+
+</Window>

@@ -1,0 +1,12 @@
+D:\Csampletask\Csharp\PhotoMaker\PhotoMaker\bin\Debug\Barcode\Examples\VS2013\WindowsFoms_CS\bin\Debug\WindowsForms_CS.exe
+D:\Csampletask\Csharp\PhotoMaker\PhotoMaker\bin\Debug\Barcode\Examples\VS2013\WindowsFoms_CS\bin\Debug\WindowsForms_CS.pdb
+D:\Csampletask\Csharp\PhotoMaker\PhotoMaker\bin\Debug\Barcode\Examples\VS2013\WindowsFoms_CS\bin\Debug\Barcode.dll
+D:\Csampletask\Csharp\PhotoMaker\PhotoMaker\bin\Debug\Barcode\Examples\VS2013\WindowsFoms_CS\bin\Debug\Barcode.xml
+D:\Csampletask\Csharp\PhotoMaker\PhotoMaker\bin\Debug\Barcode\Examples\VS2013\WindowsFoms_CS\obj\Debug\WindowsForms_CS.csprojAssemblyReference.cache
+D:\Csampletask\Csharp\PhotoMaker\PhotoMaker\bin\Debug\Barcode\Examples\VS2013\WindowsFoms_CS\obj\Debug\WindowsForms_CS.Form1.resources
+D:\Csampletask\Csharp\PhotoMaker\PhotoMaker\bin\Debug\Barcode\Examples\VS2013\WindowsFoms_CS\obj\Debug\WindowsForms_CS.Properties.Resources.resources
+D:\Csampletask\Csharp\PhotoMaker\PhotoMaker\bin\Debug\Barcode\Examples\VS2013\WindowsFoms_CS\obj\Debug\WindowsForms_CS.csproj.GenerateResource.cache
+D:\Csampletask\Csharp\PhotoMaker\PhotoMaker\bin\Debug\Barcode\Examples\VS2013\WindowsFoms_CS\obj\Debug\WindowsForms_CS.csproj.CoreCompileInputs.cache
+D:\Csampletask\Csharp\PhotoMaker\PhotoMaker\bin\Debug\Barcode\Examples\VS2013\WindowsFoms_CS\obj\Debug\WindowsForms_CS.csproj.CopyComplete
+D:\Csampletask\Csharp\PhotoMaker\PhotoMaker\bin\Debug\Barcode\Examples\VS2013\WindowsFoms_CS\obj\Debug\WindowsForms_CS.exe
+D:\Csampletask\Csharp\PhotoMaker\PhotoMaker\bin\Debug\Barcode\Examples\VS2013\WindowsFoms_CS\obj\Debug\WindowsForms_CS.pdb

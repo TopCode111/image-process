@@ -1,0 +1,35 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = ".", ".", "{CC95DC77-25AE-4CF3-9C4D-82D66AFD1935}"
+	ProjectSection(WebsiteProperties) = preProject
+		Debug.AspNetCompiler.VirtualPath = "/RDLC_Web_CS"
+		Debug.AspNetCompiler.PhysicalPath = ".\..\RDLC_Web_CS\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\RDLC_Web_CS\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/RDLC_Web_CS"
+		Release.AspNetCompiler.PhysicalPath = ".\..\RDLC_Web_CS\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\RDLC_Web_CS\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "3116"
+		DefaultWebSiteLanguage = "Visual C#"
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|.NET = Debug|.NET
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CC95DC77-25AE-4CF3-9C4D-82D66AFD1935}.Debug|.NET.ActiveCfg = Debug|.NET
+		{CC95DC77-25AE-4CF3-9C4D-82D66AFD1935}.Debug|.NET.Build.0 = Debug|.NET
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

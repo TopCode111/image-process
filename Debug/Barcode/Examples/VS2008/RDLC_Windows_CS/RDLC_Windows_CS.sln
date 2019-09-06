@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RDLC_Windows_CS", "RDLC_Windows_CS.csproj", "{13C08B93-4896-4763-8885-64F80C4A209F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{13C08B93-4896-4763-8885-64F80C4A209F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{13C08B93-4896-4763-8885-64F80C4A209F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{13C08B93-4896-4763-8885-64F80C4A209F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{13C08B93-4896-4763-8885-64F80C4A209F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

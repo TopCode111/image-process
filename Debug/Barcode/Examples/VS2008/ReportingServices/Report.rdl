@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Report xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner" xmlns="http://schemas.microsoft.com/sqlserver/reporting/2008/01/reportdefinition">
+  <Body>
+    <ReportItems>
+      <Image Name="Image1">
+        <Source>Database</Source>
+        <Value>=Code.GetBarcode128("1234")</Value>
+        <MIMEType>image/png</MIMEType>
+        <Sizing>FitProportional</Sizing>
+        <Top>0.44133cm</Top>
+        <Left>0.49424cm</Left>
+        <Height>1.8175cm</Height>
+        <Width>4.59562cm</Width>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+        </Style>
+      </Image>
+      <Textbox Name="Textbox1">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>If the barcode image is not shown in runtime then most likely you need to add additional permissions to the code using Barcode.dll</Value>
+                <Style />
+              </TextRun>
+            </TextRuns>
+            <Style />
+          </Paragraph>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value />
+                <Style />
+              </TextRun>
+            </TextRuns>
+            <Style />
+          </Paragraph>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>Please visit:</Value>
+                <Style />
+              </TextRun>
+            </TextRuns>
+            <Style />
+          </Paragraph>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>https://www.limilabs.com/barcode/help</Value>
+                <Style />
+              </TextRun>
+            </TextRuns>
+            <Style />
+          </Paragraph>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>and read:</Value>
+                <Style />
+              </TextRun>
+            </TextRuns>
+            <Style />
+          </Paragraph>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>"Using Barcode.dll in SQL Server 2008 Reporting Services" section.</Value>
+                <Style />
+              </TextRun>
+            </TextRuns>
+            <Style />
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox1</rd:DefaultName>
+        <Top>9.25195cm</Top>
+        <Left>0.49424cm</Left>
+        <Height>3.51042cm</Height>
+        <Width>15.54396cm</Width>
+        <ZIndex>1</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox2">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>Select "Properties" from the context menu on grey field:
+	a. Take a look at "References" tab, Barcode.dll is referenced there, and BarcodeFactory is instantiated.
+	b. Note that Barcode.dll must be registered in GAC - installer does that.
+	c. Take a look at "Code" tab, GetBarcode128 method is defined there.
+	
+3. Take a look at Image control, note its properties:
+	MimeType	"image/png"
+	Source		"DataBase"
+	Value		"=Code.GetBarcode128(Fields!Name.Value)"</Value>
+                <Style />
+              </TextRun>
+            </TextRuns>
+            <Style />
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox2</rd:DefaultName>
+        <Top>2.98133cm</Top>
+        <Left>0.49424cm</Left>
+        <Height>5.3625cm</Height>
+        <Width>15.54396cm</Width>
+        <ZIndex>2</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+    </ReportItems>
+    <Height>5.40625in</Height>
+    <Style />
+  </Body>
+  <Code>Public Function GetBarcode128(ByVal code As String) As Byte()
+	If code is Nothing
+		code = ""
+	End If
+
+	Dim b As Limilabs.Barcode.IBaseBarcode
+	b = factory.CreateBarcode(Limilabs.Barcode.Symbology.Code128)
+
+	b.Number = code
+	b.NarrowBarWidth = 1 
+	b.ChecksumAdd = True
+	b.ChecksumVisible = True
+                b.Height = 40
+                b.FontHeight = 0.4F
+                b.IsNumberVisible = False
+	return b.Render(Limilabs.Barcode.ImageType.png)
+End Function</Code>
+  <Width>7.78125in</Width>
+  <Page>
+    <PageHeight>29.7cm</PageHeight>
+    <PageWidth>21cm</PageWidth>
+    <LeftMargin>2cm</LeftMargin>
+    <RightMargin>2cm</RightMargin>
+    <TopMargin>2cm</TopMargin>
+    <BottomMargin>2cm</BottomMargin>
+    <ColumnSpacing>0.13cm</ColumnSpacing>
+    <Style />
+  </Page>
+  <CodeModules>
+    <CodeModule>Barcode, Version=2.0.0.20, Culture=neutral, PublicKeyToken=6dc438ab78a525b3</CodeModule>
+  </CodeModules>
+  <Classes>
+    <Class>
+      <ClassName>Limilabs.Barcode.BarcodeFactory</ClassName>
+      <InstanceName>factory</InstanceName>
+    </Class>
+  </Classes>
+  <rd:ReportID>ea72943d-6163-4419-b837-89c5cd4b9d56</rd:ReportID>
+  <rd:ReportUnitType>Cm</rd:ReportUnitType>
+</Report>

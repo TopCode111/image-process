@@ -1,0 +1,25 @@
+<?xml version="1.0" standalone="yes"?>
+<DataSet1 xmlns="http://tempuri.org/DataSet1.xsd">
+
+  <Products>
+    <ID>0401</ID>
+    <Name>Jewelry Box</Name>
+    <Price>39.95</Price>
+  </Products>
+  <Products>
+    <ID>4564</ID>
+    <Name>Mini Digital Camera</Name>
+    <Price>15.00</Price>
+  </Products>
+  <Products>
+    <ID>7891</ID>
+    <Name>Stiletto High Heels</Name>
+    <Price>19.95</Price>
+  </Products>
+  <Products>
+    <ID>1234</ID>
+    <Name>Third Product</Name>
+    <Price>49.95</Price>
+  </Products>
+
+</DataSet1>

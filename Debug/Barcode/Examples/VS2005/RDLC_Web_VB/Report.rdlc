@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2005/01/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+  <DataSources>
+    <DataSource Name="DummyDataSource">
+      <ConnectionProperties>
+        <ConnectString />
+        <DataProvider>SQL</DataProvider>
+      </ConnectionProperties>
+      <rd:DataSourceID>8bc21c5c-610f-4c1f-be72-bb2aa31568b1</rd:DataSourceID>
+    </DataSource>
+  </DataSources>
+  <BottomMargin>2.5cm</BottomMargin>
+  <RightMargin>2.5cm</RightMargin>
+  <PageWidth>21cm</PageWidth>
+  <rd:DrawGrid>true</rd:DrawGrid>
+  <InteractiveWidth>21cm</InteractiveWidth>
+  <rd:GridSpacing>0.25cm</rd:GridSpacing>
+  <rd:SnapToGrid>true</rd:SnapToGrid>
+  <Body>
+    <ColumnSpacing>1cm</ColumnSpacing>
+    <ReportItems>
+      <Table Name="table2">
+        <Footer>
+          <TableRows>
+            <TableRow>
+              <TableCells>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox6">
+                      <ZIndex>5</ZIndex>
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                      </Style>
+                      <CanGrow>true</CanGrow>
+                      <Value />
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox9">
+                      <ZIndex>4</ZIndex>
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                      </Style>
+                      <CanGrow>true</CanGrow>
+                      <Value />
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox10">
+                      <ZIndex>3</ZIndex>
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                      </Style>
+                      <CanGrow>true</CanGrow>
+                      <Value />
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+              </TableCells>
+              <Height>0.63492cm</Height>
+            </TableRow>
+          </TableRows>
+        </Footer>
+        <Left>0.25cm</Left>
+        <DataSetName>DataSet1_Products</DataSetName>
+        <Top>1.75cm</Top>
+        <ZIndex>1</ZIndex>
+        <Width>13.66666cm</Width>
+        <Details>
+          <TableRows>
+            <TableRow>
+              <TableCells>
+                <TableCell>
+                  <ReportItems>
+                    <Image Name="image2">
+                      <Sizing>AutoSize</Sizing>
+                      <MIMEType>image/png</MIMEType>
+                      <ZIndex>2</ZIndex>
+                      <Source>Database</Source>
+                      <Style>
+                        <PaddingLeft>5pt</PaddingLeft>
+                        <PaddingBottom>5pt</PaddingBottom>
+                        <PaddingRight>5pt</PaddingRight>
+                        <PaddingTop>5pt</PaddingTop>
+                      </Style>
+                      <Value>=Code.GetBarcode128(Fields!ID.Value)</Value>
+                    </Image>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox11">
+                      <ZIndex>1</ZIndex>
+                      <Style>
+                        <PaddingLeft>5pt</PaddingLeft>
+                        <PaddingBottom>5pt</PaddingBottom>
+                        <FontWeight>700</FontWeight>
+                        <PaddingRight>5pt</PaddingRight>
+                        <PaddingTop>5pt</PaddingTop>
+                      </Style>
+                      <CanGrow>true</CanGrow>
+                      <Value>=Fields!Name.Value</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox12">
+                      <Style>
+                        <PaddingLeft>5pt</PaddingLeft>
+                        <PaddingBottom>5pt</PaddingBottom>
+                        <FontWeight>700</FontWeight>
+                        <PaddingRight>5pt</PaddingRight>
+                        <PaddingTop>5pt</PaddingTop>
+                      </Style>
+                      <CanGrow>true</CanGrow>
+                      <Value>=Fields!Price.Value</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+              </TableCells>
+              <Height>0.75cm</Height>
+            </TableRow>
+          </TableRows>
+        </Details>
+        <Header>
+          <TableRows>
+            <TableRow>
+              <TableCells>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox13">
+                      <ZIndex>8</ZIndex>
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <FontWeight>700</FontWeight>
+                        <BackgroundColor>#c04000</BackgroundColor>
+                        <Color>White</Color>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                      </Style>
+                      <CanGrow>true</CanGrow>
+                      <Value>ID</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox14">
+                      <ZIndex>7</ZIndex>
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <FontWeight>700</FontWeight>
+                        <BackgroundColor>#c04000</BackgroundColor>
+                        <Color>White</Color>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                      </Style>
+                      <CanGrow>true</CanGrow>
+                      <Value>Product name</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox15">
+                      <ZIndex>6</ZIndex>
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <FontWeight>700</FontWeight>
+                        <BackgroundColor>#c04000</BackgroundColor>
+                        <Color>White</Color>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                      </Style>
+                      <CanGrow>true</CanGrow>
+                      <Value>Product price</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+              </TableCells>
+              <Height>0.63492cm</Height>
+            </TableRow>
+          </TableRows>
+        </Header>
+        <TableColumns>
+          <TableColumn>
+            <Width>3cm</Width>
+          </TableColumn>
+          <TableColumn>
+            <Width>5.33333cm</Width>
+          </TableColumn>
+          <TableColumn>
+            <Width>5.33333cm</Width>
+          </TableColumn>
+        </TableColumns>
+        <Height>2.01984cm</Height>
+      </Table>
+      <Textbox Name="textbox3">
+        <Left>0.25cm</Left>
+        <Top>0.75cm</Top>
+        <Width>7cm</Width>
+        <Style>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingBottom>2pt</PaddingBottom>
+          <FontWeight>700</FontWeight>
+          <FontSize>14pt</FontSize>
+          <Color>DarkOliveGreen</Color>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+        </Style>
+        <CanGrow>true</CanGrow>
+        <Height>0.63492cm</Height>
+        <Value>Product list</Value>
+      </Textbox>
+    </ReportItems>
+    <Height>7.25cm</Height>
+  </Body>
+  <rd:ReportID>773e7de4-665c-41d9-8875-911bfca45d8d</rd:ReportID>
+  <LeftMargin>2.5cm</LeftMargin>
+  <DataSets>
+    <DataSet Name="DataSet1_Products">
+      <rd:DataSetInfo>
+        <rd:DataSetName>DataSet1</rd:DataSetName>
+        <rd:TableName>Products</rd:TableName>
+      </rd:DataSetInfo>
+      <Query>
+        <rd:UseGenericDesigner>true</rd:UseGenericDesigner>
+        <CommandText />
+        <DataSourceName>DummyDataSource</DataSourceName>
+      </Query>
+      <Fields>
+        <Field Name="ID">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>ID</DataField>
+        </Field>
+        <Field Name="Name">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>Name</DataField>
+        </Field>
+        <Field Name="Price">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>Price</DataField>
+        </Field>
+      </Fields>
+    </DataSet>
+  </DataSets>
+  <CodeModules>
+    <CodeModule>Barcode, Version=2.0.0.20, Culture=neutral, PublicKeyToken=6dc438ab78a525b3</CodeModule>
+    <CodeModule>System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</CodeModule>
+  </CodeModules>
+  <Code>Public Function GetBarcode128(ByVal code As String) As Byte()
+	If code is Nothing
+		code = ""
+	End If
+
+	Dim b As Limilabs.Barcode.IBaseBarcode
+	b = factory.CreateBarcode(Limilabs.Barcode.Symbology.Code128)
+
+	b.Number = code
+	b.NarrowBarWidth = 1 
+	b.ChecksumAdd = True
+	b.ChecksumVisible = True
+	b.Height = 40
+	b.FontHeight = 0.25F
+
+	Return b.Render(Limilabs.Barcode.ImageType.Png)
+End Function</Code>
+  <Width>15.25cm</Width>
+  <InteractiveHeight>29.7cm</InteractiveHeight>
+  <Classes>
+    <Class>
+      <ClassName>Limilabs.Barcode.BarcodeFactory</ClassName>
+      <InstanceName>factory</InstanceName>
+    </Class>
+  </Classes>
+  <Language>en-US</Language>
+  <TopMargin>2.5cm</TopMargin>
+  <PageHeight>29.7cm</PageHeight>
+</Report>
